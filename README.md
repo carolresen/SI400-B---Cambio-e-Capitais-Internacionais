@@ -1,6 +1,6 @@
 # SI400-B---Casa-de-Cambio
 
-Título do projeto -> Casa de Câmbio: 
+Título do projeto -> Casa de Câmbio: informações sobre cotações de moedas.
 
 Objetivo -> Exibir dados sobre cotações de fechamento de moedas e taxas de câmbio.
 
@@ -18,4 +18,4 @@ Caroline Resende Silveira RA: 165921- Email: caroline.resen@gmail.com - GitHub: 
  RA:  -  Email:  - GitHub: https://github.com/
 
 
-Repositório: https://github.com/j-pereira/Software-de-Mortalidade-Infantil
+Repositório: https://github.com/carolresen/SI400-B---Casa-de-Cambio

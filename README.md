@@ -6,6 +6,7 @@ Objetivo -> Exibir dados sobre cotações de fechamento de moedas e taxas de câ
 
 Fonte de dados: < http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao > Acesso em 03/08/2016.
 
+Tipo de consulta -> Consultas a informações solicitadas pelo usuário.
 
 Grupo:
 

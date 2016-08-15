@@ -20,12 +20,17 @@ http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao
 Sites que serão usados para consulta
 
 ######Descrição dos dados
-Atributos ou campos presentes e o significado de cada um deles
+Atributos ou campos presentes e o significado de cada um deles?
 
 ######Volume de dados
-Quantos valores existem ou dimensão do conjunto de dados em bytes
+Quantos valores existem ou dimensão do conjunto de dados em bytes?
 
 ######Formato de disponibilização dos dados
 Os dados estão no formato CSV
 
 ######Um exemplo de consulta que pode ser realizada e como seria a apresentação gráfica do resultado
+Consulta 1 -> Valor do dólar na data xx/xx/xxxx para compra e venda.
+Exibição 1 -> Apresentação da data consultada, do valor de compra do dólar nesse dia e o valor de venda do dólar nesse dia. Além disso, apresentará a fonte dos dados (Banco Central do Brasil). Todos esses dados serão apresentados em uma janela personalizada, de modo que a interface com o usuário seja simples e coerente, sem excesso de informação, com um visual objetivo e claro.
+
+Consulta 2 -> Média do valor do dólar na semana mais recente, ou seja, últimos 7 dias.
+Exibição 2 -> Apresentação dos dias da semana requisitada, do valor médio de compra do dólar nessa semana e o valor médio de venda do dólar nessa semana. Além disso, apresentará a fonte dos dados (Banco Central do Brasil). Todos esses dados serão apresentados em uma janela personalizada, de modo que a interface com o usuário seja simples e coerente, sem excesso de informação, com um visual objetivo e claro.

@@ -20,10 +20,14 @@ http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao
 Sites que serão usados para consulta
 
 ######Descrição dos dados
-Atributos ou campos presentes e o significado de cada um deles?
+Os dados possuem: 
+ • Data: referente ao dia que foi feita a cotação;
+ • Tipo: no caso do dólar é o tipo A. Siginifica que tem como taxa de câmbio quantidades de moeda por uma unidade de Dólar dos Estados Unidos (USD).
+ • Compra: o valor de compra do dólar referente a data;
+ • Venda: o valor de venda do dólar referente a data.
 
 ######Volume de dados
-Quantos valores existem ou dimensão do conjunto de dados em bytes?
+Cada tabela num intervalo de 30 dias possui o tamanho de 2 KB. No intervalo de 30 dias é contato somente os dias úteis, por volta de 22 dias, ou seja, 22 valores.
 
 ######Formato de disponibilização dos dados
 Os dados estão no formato CSV

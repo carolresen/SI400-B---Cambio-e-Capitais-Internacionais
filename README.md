@@ -19,8 +19,8 @@ O projeto visa o desenvolvimento de um sistema capaz de apresentar informações
 http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao
 Sites que serão usados para consulta
 
-######Descrição dos dados
-Os dados possuem: 
+######Descrição dos dados</br>
+Os dados possuem: </br>
  • Data: referente ao dia que foi feita a cotação;</br>
  • Tipo: no caso do dólar é o tipo A. Siginifica que tem como taxa de câmbio quantidades de moeda por uma unidade de Dólar dos Estados Unidos (USD);</br>
  • Compra: o valor de compra do dólar referente a data;</br>

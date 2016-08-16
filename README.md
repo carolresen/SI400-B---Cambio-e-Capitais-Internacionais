@@ -21,9 +21,9 @@ Sites que serão usados para consulta
 
 ######Descrição dos dados
 Os dados possuem: 
- • Data: referente ao dia que foi feita a cotação;
- • Tipo: no caso do dólar é o tipo A. Siginifica que tem como taxa de câmbio quantidades de moeda por uma unidade de Dólar dos Estados Unidos (USD).
- • Compra: o valor de compra do dólar referente a data;
+ • Data: referente ao dia que foi feita a cotação;</br>
+ • Tipo: no caso do dólar é o tipo A. Siginifica que tem como taxa de câmbio quantidades de moeda por uma unidade de Dólar dos Estados Unidos (USD);</br>
+ • Compra: o valor de compra do dólar referente a data;</br>
  • Venda: o valor de venda do dólar referente a data.
 
 ######Volume de dados

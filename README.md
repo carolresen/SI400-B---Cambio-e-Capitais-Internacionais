@@ -13,7 +13,7 @@ Maria Victória da Silva - RA: 156604 -  Email: m156604@g.unicamp.br - GitHub: h
 Michael Ramos de Almeida - RA: 138904 -  Email: michaelralmeida@gmail.com - GitHub: https://github.com/Michaelalmeida
 
 ######Motivação
-Por que o projeto é relevante?
+O projeto visa o desenvolvimento de um sistema capaz de apresentar informações sobre cotações de moedas de maneira completa, simples e objetiva, reunindo dados relevantes sobre os boletins de cotação, bem como produzindo refinamento sobre esses dados através de estatísticas. O sistema "Cambio e Capitais Internacionais" poderia ser uma ferramenta muito útil para Casas de Câmbio, viajantes e outros interessados em informações sobre cotações de moedas e estimativas médias do preço de venda e compra, por exemplo, do dólar em um dado período.
 
 ######Fontes de dados
 http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao

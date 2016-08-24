@@ -38,3 +38,5 @@ Exibição 1 -> Apresentação da data consultada, do valor de compra do dólar 
 
 Consulta 2 -> Média do valor do dólar na semana mais recente, ou seja, últimos 7 dias.
 Exibição 2 -> Apresentação dos dias da semana requisitada, do valor médio de compra do dólar nessa semana e o valor médio de venda do dólar nessa semana. Além disso, apresentará a fonte dos dados (Banco Central do Brasil). Todos esses dados serão apresentados em uma janela personalizada, de modo que a interface com o usuário seja simples e coerente, sem excesso de informação, com um visual objetivo e claro.
+
+![Gráfico Dólar](https://github.com/carolresen/SI400-B---Cambio-e-Capitais-Internacionais/blob/master/DOLAR.png)

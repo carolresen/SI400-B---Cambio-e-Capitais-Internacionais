@@ -25,4 +25,24 @@ public class Cotacao {
     public void mostrarCotacao()
     {
     }    
+    
+    //Operacoes matematicas ... Caroline Resende
+    
+    // SOBRECARGA de METODOS
+    float mediaCompra (float x1, float x2) {
+        return (x1+x2)/2;
+    }
+    
+    float mediaVenda (float x1, float x2) {
+        return (x1+x2)/2;
+    }
+    
+    float mediaCompra (float x1, float x2, float x3) {
+        return (x1+x2+x3)/3;
+    }
+    
+     float mediaVenda (float x1, float x2, float x3) {
+        return (x1+x2+x3)/3;
+    }
+    
 }

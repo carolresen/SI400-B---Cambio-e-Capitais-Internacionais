@@ -28,20 +28,41 @@ public class Cotacao {
     //Operacoes matematicas ... Caroline Resende
     
     // SOBRECARGA de METODOS
-    float mediaCompra (float x1, float x2) {
+    public float mediaCompra (float x1, float x2) {
         return (x1+x2)/2;
     }
     
-    float mediaVenda (float x1, float x2) {
+    public float mediaVenda (float x1, float x2) {
         return (x1+x2)/2;
     }
     
-    float mediaCompra (float x1, float x2, float x3) {
+    public float mediaCompra (float x1, float x2, float x3) {
         return (x1+x2+x3)/3;
     }
     
-     float mediaVenda (float x1, float x2, float x3) {
+    public float mediaVenda (float x1, float x2, float x3) {
         return (x1+x2+x3)/3;
     }
     
+    // FUNCAO COM LISTA DE ARGUMENTOS DE COMPRIMENTO VARIAVEL - MEDIA
+    public float mediaVenda(float... x){
+        float media=0;
+        
+        for(float valor: x){
+            media +=valor;
+        }
+        
+        return media/x.length;
+    }
+
+    public float mediaCompra(float... x){
+        float media=0;
+        
+        for(float valor: x){
+            media +=valor;
+        }
+        
+        return media/x.length;
+    }
+        
 }

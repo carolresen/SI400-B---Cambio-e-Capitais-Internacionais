@@ -9,6 +9,7 @@ import java.util.Date;
 /**
  *
  * @author Victória
+ * @author Caroline
  */
 public class Cotacao {
     String moeda;
@@ -25,9 +26,9 @@ public class Cotacao {
     {
     }    
     
-    //Operacoes matematicas ... Caroline Resende
+    /* Operacoes matematicas ... Caroline Resende */
     
-    // SOBRECARGA de METODOS
+    /* SOBRECARGA de METODOS */
     public float mediaCompra (float x1, float x2) {
         return (x1+x2)/2;
     }
@@ -44,7 +45,7 @@ public class Cotacao {
         return (x1+x2+x3)/3;
     }
     
-    // FUNCAO COM LISTA DE ARGUMENTOS DE COMPRIMENTO VARIAVEL - MEDIA
+    /* FUNCAO COM LISTA DE ARGUMENTOS DE COMPRIMENTO VARIAVEL - MEDIA */
     public float mediaVenda(float... x){
         float media=0;
         

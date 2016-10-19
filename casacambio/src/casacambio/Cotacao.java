@@ -65,5 +65,7 @@ public class Cotacao {
         
         return media/x.length;
     }
+    
+    //Operacoes matemáticas finalizadas - Caroline 19/10/2016
         
 }

@@ -67,5 +67,27 @@ public class Cotacao {
     }
     
     //Operacoes matemáticas finalizadas - Caroline 19/10/2016
-        
+    
+    // Desenvolvimento MAIORCOTACAO e MENORCOTACAO a partir de array
+    // @author Caroline
+    
+    public float maiorCotacao (float[] array) {
+        float max = 0.0f;//aqui a variável max recebe o valor do primeiro item do array  
+          for (int i = 1; i < array.length; i++) {//aqui a iteração irá ocorrer  
+             if (array[i] > max){ //caso o valor da posição i seja maior que o valor de max, max será substituído pelo valor da i-ésima posição.  
+                 max = array[i]; 
+             }
+          }  
+          return max;
+    }
+          
+    public float menorCotacao (float[] array) {
+        float minimo = 0.0f;//aqui a variável max recebe o valor do primeiro item do array  
+          for (int i = 1; i < array.length; i++) {//aqui a iteração irá ocorrer  
+             if (array[i] < minimo){ //caso o valor da posição i seja maior que o valor de max, max será substituído pelo valor da i-ésima posição.  
+                 minimo = array[i]; 
+             }
+          }  
+          return minimo;
+    }
 }

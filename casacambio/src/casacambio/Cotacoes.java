@@ -37,11 +37,10 @@ public class Cotacoes {
         String[] line;
         while ((line = reader.readNext()) != null) {
             Moeda moeda = new Moeda();
-            moeda.setData(converter(line[0]));
+            moeda.setData(converterSC(line[0]));
             moeda.setTipo(line[3]);
-            moeda.setCompra(Double.parseDouble("3.48")); //Double.parseDouble(line[4])); //SUBSTITUIR CAMPOS COM VÍRGULA POR PONTO
-            moeda.setVenda(Double.parseDouble("3.48"));//Double.parseDouble(line[5]));
-            
+            moeda.setCompra(Double.parseDouble(substituir(line[4])));
+            moeda.setVenda(Double.parseDouble(substituir(line[5])));
             cotacao.add(moeda);
             System.out.println(moeda.data+", "+moeda.tipo+ ", "+ moeda.valorCompra+", "+moeda.valorVenda);
         }
@@ -53,7 +52,7 @@ public class Cotacoes {
     {
         
     }    
-        public Calendar converter(String data)
+        public Calendar converterSC(String data)
         {   
             Calendar c = null;
             try {
@@ -65,5 +64,22 @@ public class Cotacoes {
                 } 
             catch (Exception e) {}
                    return c;
+        }
+        public String converterCS(Calendar data)
+        {
+           String retorno = "";
+           try {
+            SimpleDateFormat formatoData = new SimpleDateFormat("dd/MM/yyyy");
+            Calendar hoje = data;
+            retorno = formatoData.format(hoje.getTime());
+            System.out.println(retorno);
+            } catch (Exception e) {}
+           return retorno;
+        }
+        
+        public String substituir(String a)
+        {
+            a.replace(",",".");
+            return a;
         }
 }

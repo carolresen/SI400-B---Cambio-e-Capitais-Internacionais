@@ -44,6 +44,7 @@ public class TelaInicial extends javax.swing.JFrame {
         selecaoMoeda = new javax.swing.JComboBox<String>();
         dataPesquisa = new javax.swing.JFormattedTextField();
         btnPesquisar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         mCotacao = new javax.swing.JMenu();
         mHistorico = new javax.swing.JMenu();
@@ -77,7 +78,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
         textoPesquisar.setText("Pesquisar: ");
 
-        selecaoMoeda.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Dólar", "Euro" }));
+        selecaoMoeda.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Selecione...", "Dólar", "Euro" }));
         selecaoMoeda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 selecaoMoedaActionPerformed(evt);
@@ -93,6 +94,8 @@ public class TelaInicial extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText("Data:");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -101,28 +104,34 @@ public class TelaInicial extends javax.swing.JFrame {
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(textoColcaoDolar)
-                        .addGap(18, 18, 18)
-                        .addComponent(ultimoValorDolar))
-                    .addComponent(dataUltimoDolar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(textoColcaoDolar)
+                                .addGap(18, 18, 18)
+                                .addComponent(ultimoValorDolar))
+                            .addComponent(dataUltimoDolar))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(textoCotacaoEuro)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(ultimoValorEuro))
+                            .addComponent(dataUltimoEuro))
+                        .addGap(49, 49, 49))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(textoCotacaoEuro)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(ultimoValorEuro))
-                    .addComponent(dataUltimoEuro))
-                .addGap(49, 49, 49))
+                        .addGap(134, 134, 134)
+                        .addComponent(btnPesquisar)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addComponent(textoPesquisar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(selecaoMoeda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
+                .addComponent(selecaoMoeda, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
                 .addComponent(dataPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(btnPesquisar)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(63, 63, 63))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,9 +140,11 @@ public class TelaInicial extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textoPesquisar)
                     .addComponent(selecaoMoeda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPesquisar)
-                    .addComponent(dataPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(70, 70, 70)
+                    .addComponent(dataPesquisa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addGap(18, 18, 18)
+                .addComponent(btnPesquisar)
+                .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(textoColcaoDolar)
                     .addComponent(ultimoValorDolar)
@@ -196,13 +207,28 @@ public class TelaInicial extends javax.swing.JFrame {
     private void btnPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPesquisarActionPerformed
         Cotacoes cotacoes = new Cotacoes();
         URL url;
-        try {
-            url = new URL("http://www4.bcb.gov.br/pec/taxas/port/ptaxnpesq.asp?id=txcotacao/cotacoesmoedasperiodo.csv");
-            cotacoes.lerCotacao(url);
-        } catch (MalformedURLException ex) {
-            Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
+        System.out.println(dataPesquisa.getText());
+        if(selecaoMoeda.getSelectedItem() == "Dólar")
+        {
+            try {
+                url = new URL("http://localhost/Dolar.csv");
+                cotacoes.lerCotacao(url);
+            } catch (MalformedURLException ex) {
+                Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        if(selecaoMoeda.getSelectedItem() == "Euro")
+        {
+              try {
+                url = new URL("http://localhost/Euro.csv");
+                cotacoes.lerCotacao(url);
+            } catch (MalformedURLException ex) {
+                Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IOException ex) {
+                Logger.getLogger(TelaInicial.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         
     }//GEN-LAST:event_btnPesquisarActionPerformed
@@ -260,6 +286,7 @@ public class TelaInicial extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField dataPesquisa;
     private javax.swing.JLabel dataUltimoDolar;
     private javax.swing.JLabel dataUltimoEuro;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu mConversao;

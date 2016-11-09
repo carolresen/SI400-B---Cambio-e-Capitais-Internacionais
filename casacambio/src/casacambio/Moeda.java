@@ -5,6 +5,7 @@
  */
 package casacambio;
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -13,25 +14,25 @@ import java.util.Date;
  */
 public class Moeda implements Serializable{
 
-    String data;
+    Calendar data;
     String tipo;
-    String valorCompra;
-    String valorVenda;
+    double valorCompra;
+    double valorVenda;
 
     public void setTipo(String tipo)
     {
         this.tipo = tipo;
     }
 
-    public void setData(String data)
+    public void setData(Calendar data)
     {
         this.data = data;
     }
-    public void setCompra(String valorCompra)
+    public void setCompra(double valorCompra)
     {
         this.valorCompra = valorCompra;
     }
-    public void setVenda(String valorVenda)
+    public void setVenda(double valorVenda)
     {
         this.valorVenda = valorVenda;
     }

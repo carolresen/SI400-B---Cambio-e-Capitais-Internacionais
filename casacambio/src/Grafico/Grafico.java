@@ -24,7 +24,7 @@ public class Grafico extends JFrame {
 	private static final long serialVersionUID = 1L;
  
 	public static void main(String[] args) {
-		Grafico demo = new Grafico("CotaÃ§Ã£o do dÃ³lar", "MÃ©dia");
+		Grafico demo = new Grafico("Cotação do dólar", "Média");
 		demo.pack();
 		demo.setVisible(true);
 	}
@@ -58,7 +58,7 @@ public class Grafico extends JFrame {
 	}
  
 	/**
-	 * CriaÃ§Ã£o do grÃ¡fico
+	 * Criação do gráfico
 	 * */
  
 	private JFreeChart criarGrafico(PieDataset origemDados, String titulo) {

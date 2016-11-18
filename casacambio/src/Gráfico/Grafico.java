@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package grafico;
+package Grafico;
 
 import javax.swing.JFrame;
  
@@ -45,7 +45,7 @@ public class Grafico extends JFrame {
 	 */
  
 	private PieDataset carregarDados() {
-		// Geração de dados aleatórios
+		// GeraÃ§Ã£o de dados aleatÃ³rios
 		double valor1 = 4.65;
 		double valor2 = 3.92;
 		double valor3 = 3.89;

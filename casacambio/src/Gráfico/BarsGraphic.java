@@ -29,11 +29,11 @@ super(title);
 CategoryDataset dataset = BarsGraphic.createDataset();
 JFreeChart chart = BarsGraphic.createBarChart(dataset);
 ChartPanel panel = new ChartPanel(chart);
-panel.setPreferredSize(new Dimension(400, 300));
+panel.setPreferredSize(new Dimension(500, 400));
 setContentPane(panel);
 }
 
-private static CategoryDataset createDataset() {
+public static CategoryDataset createDataset() {
 DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 //Valor aleatórios para testes
 dataset.addValue(5.10, "Compra", "Agosto");
@@ -45,10 +45,10 @@ dataset.addValue(3.75, "Venda", "Setembro");
 dataset.addValue(3.45, "Compra", "Outubro");
 dataset.addValue(3.50, "Compra", "Agosto");
 dataset.addValue(4.20, "Compra", "Setembro");
-return dataset;
+return dataset; 
 }
 
-private static JFreeChart createBarChart(CategoryDataset dataset) {
+public static JFreeChart createBarChart(CategoryDataset dataset) {
 JFreeChart chart = ChartFactory.createBarChart(
 "Dólar", //Titulo
 "Meses", // Eixo X

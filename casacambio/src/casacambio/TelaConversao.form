@@ -22,6 +22,11 @@
             <Property name="text" type="java.lang.String" value="Convers&#xe3;o"/>
           </Properties>
         </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu4">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Estat&#xed;sticas"/>
+          </Properties>
+        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>

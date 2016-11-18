@@ -49,6 +49,7 @@ public class TelaInicial extends javax.swing.JFrame {
         mCotacao = new javax.swing.JMenu();
         mHistorico = new javax.swing.JMenu();
         mConversao = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -181,6 +182,9 @@ public class TelaInicial extends javax.swing.JFrame {
         });
         jMenuBar1.add(mConversao);
 
+        jMenu1.setText("Estatísticas");
+        jMenuBar1.add(jMenu1);
+
         setJMenuBar(jMenuBar1);
         jMenuBar1.getAccessibleContext().setAccessibleName("BarraMenu");
 
@@ -287,6 +291,7 @@ public class TelaInicial extends javax.swing.JFrame {
     private javax.swing.JLabel dataUltimoDolar;
     private javax.swing.JLabel dataUltimoEuro;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenu mConversao;

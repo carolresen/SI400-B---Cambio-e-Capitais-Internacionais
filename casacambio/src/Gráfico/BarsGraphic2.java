@@ -20,7 +20,7 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
 
-// Criação do gráfico do projeto por Caroline 165921
+// Criação do gráfico do projeto por Caroline 165921 - Para 5 meses
 
 public class BarsGraphic2 extends JFrame{
 
